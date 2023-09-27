@@ -1,0 +1,46 @@
+select ps.shipping_info_id, si.shipping_driver, 
+count(ps.product_shipping_id) 
+from product_shipping ps join shipping_info si
+on ps.shipping_info_id = si.shipping_info_id
+group by ps.shipping_info_id, si.shipping_driver
+order by count(ps.product_shipping_id) desc;
+
+
+select ps.shipping_info_id, si.shipping_driver, 
+count(ps.product_shipping_id) 
+from product_shipping ps join shipping_info si
+on ps.shipping_info_id = si.shipping_info_id
+group by ps.shipping_info_id, si.shipping_driver
+order by count(ps.product_shipping_id) desc;
+
+
+select * from product where product_id not in (select distinct product_id from product_shipping);
+
+
+
+create or replace procedure create_shipment() 
+language plpgsql as $$
+begin 
+insert into product_shipping DEFAULT VALUES;
+end; $$
+call create_shipment();
+
+
+
+create or replace function set_shipment_id(shipment_date TIMESTAMP, product_id int) 
+returns BigInt 
+language plpgsql 
+as $$ declare shipment_id BigInt;
+begin   
+SELECT 
+cast(concat(cast(to_char((shipment_date)::TIMESTAMP,'yyyymmdd') as BigInt), lpad(product_id::text,3,'0')) as BigInt) into shipment_id;
+return shipment_id;
+end;
+$$;
+select set_shipment_id('2023-05-01 10:00:00',1);
+
+
+
+00 23 * * *  pg_dump postgres > postgres_backup.sql
+
+

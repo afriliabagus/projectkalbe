@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model name="Kalbe" xmi:id="FWgEPVGGAqHccAAF" xmi:version="2.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation xmi:Exporter="Visual Paradigm for UML" xmi:ExporterVersion="6.0.1"/>
+	<packagedElement xmi:id="stateMachine_id" xmi:type="uml:StateMachine">
+		<region xmi:id="stateMachine_region_id" xmi:type="uml:Region">
+			<subvertex kind="initial" name="Initial" xmi:id="aBwEPVGGAqHccACU" xmi:type="uml:Pseudostate">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<initialPseudostate/>
+				</xmi:Extension>
+			</subvertex>
+		</region>
+		<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+			<diagram/>
+		</xmi:Extension>
+	</packagedElement>
+	<packagedElement name="Product" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="awtEPVGGAqHccAE3" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Product_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="etikPVGGAqHccAFs" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Product _Name" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="xYKUPVGGAqHccAHd" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Store" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="Upa0PVGGAqHccAk1" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Store_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="0pa0PVGGAqHccAla" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Store_Name" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="0pa0PVGGAqHccAmN" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Store_Destination" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="SLn0PVGGAqHccAuJ" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Store _Address" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="SngMPVGGAqHccAv8" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Operator" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="dGsMPVGGAqHccAx0" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Operator_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="DGsMPVGGAqHccAyZ" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Operator_Name" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="TGsMPVGGAqHccAzM" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Shipping _Vehicle" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="LIGsPVGGAqHccBKY" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Vehicle_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="7IGsPVGGAqHccBK9" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Vehicle_Name" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="nIGsPVGGAqHccBLw" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="No_Polisi" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="UP73fVGGAqAAawYB" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Shipping _Info" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="29ZsPVGGAqHccBQL" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Shipping_Info_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="u9ZsPVGGAqHccBQw" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Shipping_Driver" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="uoTsPVGGAqHccBUf" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Shipping_Codriver" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="o57sPVGGAqHccBWS" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="7" name="Sending_Time" nullable="false" primaryKey="false" scale="0" syncType="1" type="19" unique="false" xmi:id="yRsi_VGGAqAAawf0" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Delivery_Time" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="6ygcPVGGAqHccBZS" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Delivery_Time_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="2ygcPVGGAqHccBZ3" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="7" name="Delivered_Time" nullable="false" primaryKey="false" scale="0" syncType="1" type="19" unique="false" xmi:id="hygcPVGGAqHccBbd" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Received_By" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="JygcPVGGAqHccBcQ" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement name="Product_Shipping" ormSyncState="1" primaryKeyConstraintName="" schema="" syncType="1" type="0" xmi:id="FHQCPVGGAqHccBih" xmi:type="dbTable">
+		<childrens>
+			<packagedElement idGenerator="native" length="10" name="Product_Shipping_ID" nullable="false" primaryKey="true" scale="0" syncType="1" type="9" unique="true" xmi:id="VHQCPVGGAqHccBjG" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="ProductProduct_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="FHvyPVGGAqHccC9V" xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="5HvyPVGGAqHccC9R" name="" refColumn="etikPVGGAqHccAFs" xmi:id="FHvyPVGGAqHccC9W" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="StoreStore_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="HQjKPVGGAqHccDDM" xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="7QjKPVGGAqHccDDI" name="" refColumn="0pa0PVGGAqHccAla" xmi:id="HQjKPVGGAqHccDDN" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="OperatorOperator_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="7bzKPVGGAqHccDD8" xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="7bzKPVGGAqHccDD4" name="" refColumn="DGsMPVGGAqHccAyZ" xmi:id="7bzKPVGGAqHccDD9" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="Shipping _VehicleVehicle_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="7n8qPVGGAqHccDcg" xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="bn8qPVGGAqHccDcc" name="" refColumn="7IGsPVGGAqHccBK9" xmi:id="7n8qPVGGAqHccDch" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="Shipping _InfoShipping_Info_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="CDBqPVGGAqHccDoX" xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="CDBqPVGGAqHccDoT" name="" refColumn="u9ZsPVGGAqHccBQw" xmi:id="CDBqPVGGAqHccDoY" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="Delivery_TimeDelivery_Time_ID" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="ArxqPVGGAqHccDq." xmi:type="dbColumn">
+				<foreignKeyConstraints>
+					<packagedElement foreignKey="ArxqPVGGAqHccDq6" name="" refColumn="2ygcPVGGAqHccBZ3" xmi:id="ArxqPVGGAqHccDq_" xmi:type="dbForeignKeyConstraint"/>
+				</foreignKeyConstraints>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement idGenerator="native" length="10" name="Qty" nullable="false" primaryKey="false" scale="0" syncType="1" type="9" unique="false" xmi:id="VySaPVGGAqHccEMd" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+			<packagedElement length="255" name="Unit" nullable="false" primaryKey="false" scale="0" syncType="1" type="27" unique="false" xmi:id="jPeaPVGGAqHccEMj" xmi:type="dbColumn">
+				<foreignKeyConstraints/>
+				<columnUserTypes/>
+			</packagedElement>
+		</childrens>
+	</packagedElement>
+	<packagedElement from="awtEPVGGAqHccAE3" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="5HvyPVGGAqHccC9R" xmi:type="dbForeignKey"/>
+	<packagedElement from="Upa0PVGGAqHccAk1" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="7QjKPVGGAqHccDDI" xmi:type="dbForeignKey"/>
+	<packagedElement from="dGsMPVGGAqHccAx0" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="7bzKPVGGAqHccDD4" xmi:type="dbForeignKey"/>
+	<packagedElement from="LIGsPVGGAqHccBKY" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="bn8qPVGGAqHccDcc" xmi:type="dbForeignKey"/>
+	<packagedElement from="29ZsPVGGAqHccBQL" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="CDBqPVGGAqHccDoT" xmi:type="dbForeignKey"/>
+	<packagedElement from="6ygcPVGGAqHccBZS" fromMultiplicity="1" identifying="false" syncType="1" to="FHQCPVGGAqHccBih" toMultiplicity="1..*" xmi:id="ArxqPVGGAqHccDq6" xmi:type="dbForeignKey"/>
+	<uml:Diagram diagramType="StateDiagram" name="State Machine Diagram1" toolName="Visual Paradigm for UML" xmi:id="1qwEPVGGAqHccACP">
+		<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+			<properties>
+				<ashowPackageNameStyle value="0"/>
+				<ashowActivityStateNodeCaption value="0"/>
+				<aeditable value="true"/>
+				<afollowDiagramParentElement value="true"/>
+				<aautoFitShapesSize value="false"/>
+				<ashowTaggedValues value="false"/>
+				<aalignToGrid value="true"/>
+				<agridVisible value="false"/>
+				<agridWidth value="10"/>
+				<agridHeight value="10"/>
+				<agridColor value="Cr:192,192,192,255"/>
+				<adiagramBackground value="Cr:255,255,255,255"/>
+				<aconnectorStyle value="1"/>
+				<aconnectionPointStyle value="0"/>
+				<azoomRatio value="1.0"/>
+				<amaximized value="false"/>
+				<ax value="0"/>
+				<ay value="0"/>
+				<awidth value="0"/>
+				<aheight value="0"/>
+				<a_globalPaletteOption value="true"/>
+				<a_alwaysShowReferenceAndSubdiagramResource value="false"/>
+				<alocked value="false"/>
+				<ashowDefaultPackage value="false"/>
+				<astateUseNameTab value="2"/>
+				<aprotocolStateMachine value="false"/>
+				<ashowTransitionEffectBody value="false"/>
+				<a_showTransitionTriggers value="true"/>
+			</properties>
+		</xmi:Extension>
+		<uml:Diagram.element>
+			<uml:DiagramElement geometry="490,50,20,20" preferredShapeType="InitialPseudoState" subject="aBwEPVGGAqHccACU" xmi:id="8BwEPVGGAqHccACS">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="490,50,20,20"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:0,0,0,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="0"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="0"/>
+						<aparentConnectorLineLength value="0"/>
+						<aconnectToPoint value="false"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="1"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:0,0,0,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+		</uml:Diagram.element>
+	</uml:Diagram>
+	<uml:Diagram diagramType="ERDiagram" name="Entity Relationship Diagram1" toolName="Visual Paradigm for UML" xmi:id="SbYEPVGGAqHccACt">
+		<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+			<properties>
+				<ashowPackageNameStyle value="0"/>
+				<ashowActivityStateNodeCaption value="0"/>
+				<aeditable value="true"/>
+				<afollowDiagramParentElement value="true"/>
+				<aautoFitShapesSize value="false"/>
+				<ashowTaggedValues value="false"/>
+				<aalignToGrid value="true"/>
+				<agridVisible value="false"/>
+				<agridWidth value="10"/>
+				<agridHeight value="10"/>
+				<agridColor value="Cr:192,192,192,255"/>
+				<adiagramBackground value="Cr:255,255,255,255"/>
+				<aconnectorStyle value="0"/>
+				<aconnectionPointStyle value="0"/>
+				<azoomRatio value="0.7000000000000001"/>
+				<amaximized value="true"/>
+				<ax value="0"/>
+				<ay value="0"/>
+				<awidth value="1259"/>
+				<aheight value="542"/>
+				<a_globalPaletteOption value="true"/>
+				<a_alwaysShowReferenceAndSubdiagramResource value="false"/>
+				<alocked value="false"/>
+				<ashowDefaultPackage value="false"/>
+				<a_showDBTableColumns value="true"/>
+				<a_showColumnTypes value="true"/>
+				<a_showColumnUserType value="false"/>
+				<a_columnConstraintsDisplayOption value="0"/>
+				<a_showExtraColumnProperties value="true"/>
+				<a_pointForeignKeyEndToColumn value="true"/>
+				<a_showForeignKeyNames value="false"/>
+				<a_alignColumnProperties value="true"/>
+			</properties>
+		</xmi:Extension>
+		<uml:Diagram.element>
+			<uml:DiagramElement geometry="100,200,410,80" preferredShapeType="DBTable" subject="awtEPVGGAqHccAE3" xmi:id="awtEPVGGAqHccAE2">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="12"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="44"/>
+						<aparentConnectorLineLength value="9"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="90,320,410,100" preferredShapeType="DBTable" subject="Upa0PVGGAqHccAk1" xmi:id="Upa0PVGGAqHccAkz">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="10"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="37"/>
+						<aparentConnectorLineLength value="9"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="600,480,410,70" preferredShapeType="DBTable" subject="dGsMPVGGAqHccAx0" xmi:id="ca7MPVGGAqHccA8X">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="8"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="36"/>
+						<aparentConnectorLineLength value="9"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="1090,330,410,80" preferredShapeType="DBTable" subject="LIGsPVGGAqHccBKY" xmi:id="LIGsPVGGAqHccBKW">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="6"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="30"/>
+						<aparentConnectorLineLength value="9"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="1080,180,410,110" preferredShapeType="DBTable" subject="29ZsPVGGAqHccBQL" xmi:id="29ZsPVGGAqHccBQJ">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="4"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="30"/>
+						<aparentConnectorLineLength value="8"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="590,100,410,110" preferredShapeType="DBTable" subject="6ygcPVGGAqHccBZS" xmi:id="6ygcPVGGAqHccBZQ">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,410,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="2"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="30"/>
+						<aparentConnectorLineLength value="8"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="560,240,480,200" preferredShapeType="DBTable" subject="FHQCPVGGAqHccBih" xmi:id="FHQCPVGGAqHccBif">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,480,18"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="0"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="30"/>
+						<aparentConnectorLineLength value="9"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<acolSortType value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Arial" size="16" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="529,229;529,309;539,309;539,288;" preferredShapeType="DBForeignKey" subject="5HvyPVGGAqHccC9R" xmi:id="5HvyPVGGAqHccC9S">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="446,146,176,246"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="0"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="520,350;520,309;540,309;" preferredShapeType="DBForeignKey" subject="7QjKPVGGAqHccDDI" xmi:id="HQjKPVGGAqHccDDJ">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="464,253,131,152"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="0"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="1030,510;1060,510;1060,326;" preferredShapeType="DBForeignKey" subject="7bzKPVGGAqHccDD4" xmi:id="7bzKPVGGAqHccDD5">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="930,226,230,384"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="0"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="1070,360;1070,365;1060,365;1060,346;" preferredShapeType="DBForeignKey" subject="bn8qPVGGAqHccDcc" xmi:id="bn8qPVGGAqHccDcd">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="1018,304,93,102"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="0"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="1059,209;1059,364;" preferredShapeType="DBForeignKey" subject="CDBqPVGGAqHccDoT" xmi:id="CDBqPVGGAqHccDoU">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="976,126,166,321"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="3"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="569,129;539,129;539,383;" preferredShapeType="DBForeignKey" subject="ArxqPVGGAqHccDq6" xmi:id="ArxqPVGGAqHccDq7">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="456,46,196,420"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ERDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<aconnectorStyle value="3"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasFromLabel value="false"/>
+						<ahasToLabel value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+		</uml:Diagram.element>
+	</uml:Diagram>
+</uml:Model>
